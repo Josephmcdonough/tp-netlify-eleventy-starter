@@ -5,7 +5,7 @@
         {%- for item in collections.all | eleventyNavigation -%}
             {%- set isCurrent = (item.url == page.url) -%}
             {%- set isParent = item.url != '/' and item.url in page.url -%}
-            <li>
+            <li class="px-4">
                 <a
                     href="{% if isCurrent %}#content{% else %}{{ item.url | url }}{% endif %}"
                     {% if isCurrent %}aria-current="page"{% endif %}

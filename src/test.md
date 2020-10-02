@@ -3,7 +3,7 @@ layout: page
 title: test markdown
 eleventyNavigation:
   key: test
-  parent: home
+  order: 2
 ---
 
 _Bonjour à Eleventy starter._
